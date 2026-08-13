@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Официальная страница скачивания приложения Сиринга-Стиль для Android." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <meta name="color-scheme" content="light" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Сиринга-Стиль — скачать приложение</title>
+  <link rel="icon" href="assets/icon.webp" type="image/webp" sizes="72x72" />
+  <link rel="icon" href="assets/icon.png" type="image/png" sizes="72x72" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <main class="hero">
+    <div class="hero__visual reveal-fade reveal--delay-1">
+      <img
+        class="hero__logo"
+        src="assets/logo_siringa_hq.png"
+        alt="Сиринга"
+        width="768"
+        height="392"
+        decoding="async"
+      />
+    </div>
+
+    <div class="hero__copy">
+      <p class="brand reveal">Сиринга-Стиль</p>
+      <h1 class="headline reveal reveal--delay-2">Приложение магазина</h1>
+      <p class="lede reveal reveal--delay-3">
+        Клиент для Android: каталог и заказы. Файл распространяется напрямую разработчиком, не через Google&nbsp;Play.
+      </p>
+      <div class="cta reveal reveal--delay-4">
+        <a
+          class="btn"
+          href="assets/siringapp.apk"
+          download="siringapp.apk"
+          type="application/vnd.android.package-archive"
+        >
+          Скачать APK
+        </a>
+        <span class="meta">
+          <span>Android&nbsp;8+</span>
+          <span class="meta__dot" aria-hidden="true">·</span>
+          <span class="meta__pkg">ru.siringa.app</span>
+          <span class="meta__dot" aria-hidden="true">·</span>
+          <span>~18&nbsp;МБ</span>
+        </span>
+      </div>
+    </div>
+  </main>
+
+  <section class="notice reveal reveal--delay-5" aria-label="Важная информация">
+    <h2 class="notice__title">Перед установкой</h2>
+    <ul class="notice__list">
+      <li>Скачивайте APK только с этой страницы — это официальная сборка «Сиринга-Стиль».</li>
+      <li>Android может запросить разрешение на установку из этого источника; это стандартная процедура вне Google&nbsp;Play.</li>
+      <li>Google LLC / Google&nbsp;Play не связаны с этим сайтом и не проверяли приложение.</li>
+      <li>Сайт не собирает персональные данные и не использует cookie или аналитику.</li>
+    </ul>
+  </section>
+
+  <footer class="footer reveal reveal--delay-5">
+    <nav class="footer__nav" aria-label="Юридическая информация">
+      <a href="privacy.html">Конфиденциальность</a>
+      <a href="terms.html">Условия использования</a>
+    </nav>
+    <p>
+      © <span id="year">2026</span> Сиринга-Стиль. Все права защищены.
+      Android — товарный знак Google&nbsp;LLC.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
